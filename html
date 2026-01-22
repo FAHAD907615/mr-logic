@@ -1,7 +1,190 @@
-import type { NextConfig } from "next";
+<!DOCTYPE html>
+<html lang="sw">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MR LOGIC LEGEND | Cyber Solutions</title>
+    <style>
+        /* General Styling */
+        body {
+            background-color: #0a0a0a;
+            color: #00ff41;
+            font-family: 'Courier New', Courier, monospace;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+        }
 
-const nextConfig: NextConfig = {
-  /* config options here */
-};
+        /* Matrix Background Animation Effect */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: linear-gradient(rgba(0, 255, 65, 0.1) 1px, transparent 1px),
+                        linear-gradient(90deg, rgba(0, 255, 65, 0.1) 1px, transparent 1px);
+            background-size: 20px 20px;
+            z-index: -1;
+            animation: move 20s linear infinite;
+        }
 
-export default nextConfig;
+        @keyframes move {
+            from { background-position: 0 0; }
+            to { background-position: 0 1000px; }
+        }
+
+        header {
+            text-align: center;
+            padding: 50px 20px;
+            border-bottom: 2px solid #00ff41;
+            background: rgba(0, 0, 0, 0.8);
+        }
+
+        h1 {
+            font-size: 3rem;
+            text-shadow: 0 0 10px #00ff41, 0 0 20px #00ff41;
+            margin: 0;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: auto;
+            padding: 20px;
+        }
+
+        .card {
+            background: rgba(20, 20, 20, 0.9);
+            border: 1px solid #00ff41;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            box-shadow: 0 0 15px rgba(0, 255, 65, 0.2);
+        }
+
+        .services-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services-list li {
+            padding: 10px 0;
+            border-bottom: 1px dashed #333;
+        }
+
+        /* WhatsApp Button */
+        .btn-whatsapp {
+            display: inline-block;
+            background: #25d366;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 50px;
+            font-size: 1.2rem;
+            margin-top: 20px;
+            transition: 0.3s;
+            box-shadow: 0 0 20px rgba(37, 211, 102, 0.5);
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px #25d366;
+        }
+
+        /* AI Helper Section */
+        .ai-box {
+            border-left: 5px solid #008cff;
+            background: rgba(0, 140, 255, 0.1);
+            padding: 15px;
+            margin-top: 20px;
+        }
+
+        /* Order Form */
+        input, textarea, button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 10px;
+            background: #111;
+            border: 1px solid #00ff41;
+            color: #00ff41;
+            box-sizing: border-box;
+        }
+
+        button {
+            cursor: pointer;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        button:hover {
+            background: #00ff41;
+            color: black;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px;
+            font-size: 0.8rem;
+            opacity: 0.6;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>SYSTEM MALFUNCTION: MR LOGIC LEGEND</h1>
+    <p>Termux Scripting | Bot Development | Cyber Security Expert</p>
+</header>
+
+<div class="container">
+    
+    <div class="card">
+        <h2>CORE SERVICES</h2>
+        <ul class="services-list">
+            <li>⚡ <strong>Termux Hacking:</strong> Jifunze automation na ethical penetration.</li>
+            <li>🤖 <strong>Bot Building:</strong> Mabot ya Telegram, WhatsApp, na Trading.</li>
+            <li>🔐 <strong>Cyber Defense:</strong> Kulinda mifumo dhidi ya mashambulizi.</li>
+            <li>🛠️ <strong>Custom Scripts:</strong> Python & Bash scripting za kisasa.</li>
+        </ul>
+    </div>
+
+    <div class="card" style="text-align: center;">
+        <h2>MSAADA WA HARAKA</h2>
+        <p>Bofya kitufe hapa chini kuwasiliana na MR LOGIC moja kwa moja WhatsApp kwa msaada zaidi.</p>
+        <a href="https://wa.me/255741444887?text=Habari%20Mr%20Logic%20Legend,%20nahitaji%20msaada%20wako." class="btn-whatsapp">
+            💬 CHAT NA MR LOGIC (AUTO-CONNECT)
+        </a>
+    </div>
+
+    <div class="card ai-box">
+        <h3>🤖 AI ASSISTANT (Beta)</h3>
+        <p><em>"Je, una shida na Termux? Niulize chochote kuhusu kodi au kurekebisha errors."</em></p>
+        <input type="text" placeholder="Andika swali lako hapa...">
+        <button>ULIZA AI</button>
+    </div>
+
+    <div class="card">
+        <h2>ORDER KOZI / HUDUMA</h2>
+        <p>Jaza fomu hii kuanza kujifunza sasa hivi:</p>
+        <form>
+            <input type="text" placeholder="Jina Lako" required>
+            <input type="email" placeholder="Barua Pepe (Email)" required>
+            <select style="width: 100%; padding: 10px; background: #111; color: #00ff41; border: 1px solid #00ff41; margin-top: 10px;">
+                <option>Chagua Huduma</option>
+                <option>Kujifunza Termux</option>
+                <option>Kutengenezewa Bot</option>
+                <option>Cyber Security Consultation</option>
+            </select>
+            <textarea rows="4" placeholder="Maelezo ya ziada..."></textarea>
+            <button type="submit">TUMA MAOMBI (ORDER)</button>
+        </form>
+    </div>
+
+</div>
+
+<footer>
+    &copy; 2026 MR LOGIC LEGEND. All Rights Reserved. <br>
+    <em>Unauthorized access is strictly prohibited.</em>
+</footer>
+
+</body>
+</html>
